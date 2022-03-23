@@ -1,4 +1,4 @@
-# scripts
+﻿# scripts
 
 
                                           ❗❗❗❗❗ДИСКЛЕЙМЕР❗❗❗❗❗
@@ -46,7 +46,6 @@ WIN LINUX: python3 runner.py <Цель> --http-methods <Метод> -t <Угро
 Методы Атаки:
 
 Атака на Layer 7 (HTTP(S) по URL) 
-
 python3 runner.py https://example.com https://example1.com -t 1000 --debug
 
 Атака на Layer 7 (HTTP по IP + PORT)
@@ -58,8 +57,6 @@ python3 runner.py udp://192.168.2.10:53 -t 1000 --debug
 
 Комбинированая атака
 python3 runner.py tcp://192.168.2.10:53 https://example1.com 
-
-
 
 
 Вывод из атаки :
