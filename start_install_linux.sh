@@ -20,8 +20,6 @@ pip install --upgrade pip > /dev/null #No output. Resolved some problems with pi
 
 cd $HOME
 rm -rf VZ
-rm -rf Docker_VZ
-git clone https://github.com/mr-kritik/Docker_VZ.git
 git clone https://github.com/mr-kritik/VZ.git
 python3 -m pip install -r $HOME/VZ/MHDDoS/requirements.txt
 
