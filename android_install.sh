@@ -18,7 +18,7 @@ fi
 if [ ! -f /data/data/com.termux/files/usr/bin/curl ]; then
    apt install curl  -y
 fi
-pip install --upgrade pip > /dev/null #No output. Resolved some problems with pip on debian
+pip install -U pip > /dev/null #No output. Resolved some problems with pip on debian
 
 cd $HOME
 rm -rf android_soft
