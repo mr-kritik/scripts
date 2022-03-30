@@ -7,10 +7,10 @@ if [ ! -f /data/data/com.termux/files/usr/bin/git ]; then
    apt install git -y
 fi
 if [ ! -f /data/data/com.termux/files/usr/bin/python3 ]; then
-   apt install python3 -y
+   apt install python -y
 fi
 if [ ! -f /data/data/com.termux/files/usr/bin/pip ]; then
-   apt install python3-pip  -y
+   apt install python-pip  -y
 fi
 if [ ! -f /data/data/com.termux/files/usr/bin/wget ]; then
    apt install wget  -y
