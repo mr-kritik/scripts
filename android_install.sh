@@ -2,12 +2,12 @@
 
 alias pkg=apt
 echo PS1='"\[\e[1;32m\] ╭──[\[\e[31m\]\u\[\e[36m\]@\[\e[32m\]TERMUX]────\[\e[31m\][\t]\[\e[32m\]────\[\e[33m\][\!]\n\[\e[1;32m\][\#]\n\[\e[1;32m\] ╰──[\[\e[34m\]\W\[\e[32m\]]──\[\e[31m\]➤\$ \[\e[m\]"'>>.bashrc
-sudo sudo apt update -y
+apt update -y
 if [ ! -f /data/data/com.termux/files/usr/bin/git ]; then
-   sudo apt install git -y
+   apt install git -y
 fi
 if [ ! -f /data/data/com.termux/files/usr/bin/python3 ]; then
-   sudo apt install python3 -y
+   apt install python3 -y
 fi
 if [ ! -f /data/data/com.termux/files/usr/bin/pip ]; then
    apt install python3-pip  -y
