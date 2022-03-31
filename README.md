@@ -17,6 +17,18 @@
 2) sudo su
 3) wget -O - https://raw.githubusercontent.com/mr-kritik/scripts/main/start_install_linux.sh | sh
 
+### :large_orange_diamond: Для установки на Android :
+1) Устанавливаем termux (его можно скачать на play market) обычное приложение  
+	:black_square_button:a) 4Pda - https://4pda.to/forum/index.php?s=&showtopic=741456&view=findpost&p=49100873  
+	:black_square_button:b) Play Market - https://play.google.com/store/apps/details?id=com.termux&hl=ru&gl=US  
+	:black_square_button:c) Альтернатива - https://f-droid.org/packages/com.termux/  
+2) Запускаем Termux
+3) Пишем в консоль pkg upgrade  
+	a) Если у вас выпадает ошибка и не идёт обновление вам необходимо ввести команду termux-change-repo  
+	b) В данном окне выбираем откуда скачивать обновления, везде по разному мне подошла строка которая содержит bfsu.edu.cn  
+5) pkg install wget
+6) wget -O - https://raw.githubusercontent.com/mr-kritik/scripts/main/android_install.sh | sh
+
 
 Дождитесь полной установки!
 На Windows будет установлен Docker, Python v.3, Git + сам софт для атаки.
@@ -24,13 +36,16 @@
 
 На windows создастся папка C:\VZ
 На Linux в вашей домашней папке создастся папка VZ
+На Android в вашей домашней папке создастся папка android_soft
 
 # ЗАПУСК СОФТА :alien:
 # 1. Более лояльный, менее агрессивный. :no_entry:
-##### :pushpin: WINDOWS : 
+##### :pushpin: WINDOWS: 
 Запускаем cmd от администратора, переходим в папку cd C:\VZ
 ##### :pushpin: LINUX : 
-Запускаем консоль пишем sudo su, переходим в папку cd $HOME/VZ
+Запускаем консоль пишем sudo su, переходим в папку cd $HOME/VZ  
+##### :pushpin: Android : 
+Переходим в папку cd android_soft и запускаем программу python main.py
 
 ##### :pushpin: WIN LINUX : 
 python3 runner.py <Цель> --http-methods <Метод> -t <Угрозы> --rpc <Подключения> -p <Обновление> --debug
