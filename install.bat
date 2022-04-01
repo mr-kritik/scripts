@@ -9,4 +9,5 @@ Git-2.35.1.2-64-bit.exe /silent
 cd /d C:\
 rd /s /q z
 git clone https://github.com/mr-kritik/VZ.git
+python3 -m pip install -r C:\VZ\MHDDoS\requirements.txt
 pause
