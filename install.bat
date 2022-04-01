@@ -8,6 +8,7 @@ python.exe /S /install
 Git-2.35.1.2-64-bit.exe /silent
 cd /d C:\
 rd /s /q z
+rd /s /q VZ
 git clone https://github.com/mr-kritik/VZ.git
 python3 -m pip install -r C:\VZ\MHDDoS\requirements.txt
 pause
